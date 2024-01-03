@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 21</title>
+  </head>
+  <body>
+    <!-- Sử dụng cặp thẻ table để vẽ bảng -->
+    <!-- Thẻ tr - table row - Đại diện cho một hàng trong bảng HTML -->
+    <!-- Thẻ td - table data - Đại diện cho một ô dữ liệu trong bảng HTML -->
+    <!-- Thẻ th - table header - Định nghĩa một ô tiêu đề trong bảng HTML -->
+    <!-- Ví dụ 1 -->
+    <table>
+      <tr>
+        <th>Tên sản phẩm</th>
+        <th>Giá</th>
+      </tr>
+      <tr>
+        <td>Áo phông</td>
+        <td>100.000 VNĐ</td>
+      </tr>
+      <tr>
+        <td>Quần jean</td>
+        <td>200.000 VNĐ</td>
+      </tr>
+    </table>
+
+    <!-- Thẻ thead - table header - Định nghĩa phần đầu của bảng (Thường chứa các ô tiêu đề th của các cột trong bảng) -->
+    <!-- Thẻ tbody - table body - Định nghĩa phần thân của bảng (Thường chứa các thẻ tr và các ô dữ liệu td tương ứng) -->
+    <!-- Thẻ tfoot - table footer - Định nghĩa phần cuối của bảng (Thường chứa các ô chú thích, tổng kết, hoặc thông tin cuối cùng về bảng) -->
+    <!-- Ví dụ 2 -->
+    <table>
+      <thead>
+        <tr>
+          <th>Tên sản phẩm</th>
+          <th>Giá</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Áo phông</td>
+          <td>100.000 VNĐ</td>
+        </tr>
+        <tr>
+          <td>Quần jean</td>
+          <td>200.000 VNĐ</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Tổng cộng</td>
+          <td>300.000 VNĐ</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Thuộc tính colspan và rowspan của thẻ th và td -->
+    <!-- colspan - Chỉ định phần tử chiếm bao nhiêu cột -->
+    <!-- rowspan - Chỉ định phần tử chiếm bao nhiêu hàng -->
+    <!-- Ví dụ 3 -->
+    <table>
+      <thead>
+        <tr>
+          <th>Tên sản phẩm</th>
+          <th colspan="2">Mô tả</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Áo phông</td>
+          <td>Chất liệu</td>
+          <td>Bạt</td>
+        </tr>
+        <tr>
+          <td>Kích thước</td>
+          <td>M, L, XL</td>
+        </tr>
+        <tr>
+          <td>Quần jean</td>
+          <td colspan="2">Quần jean cao cấp, dễ phối đồ</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Bài tập -->
+    <table>
+      <!-- Cú pháp nhanh: thead>tr>th*3 -->
+      <thead>
+        <tr>
+          <th>Tên sản phẩm</th>
+          <th>Giá sản phẩm</th>
+          <th>Số lượng còn lại</th>
+        </tr>
+      </thead>
+      <!-- Cú pháp nhanh: tbody>tr*3>td*3 -->
+      <tbody>
+        <tr>
+          <td>Áo thun nam</td>
+          <td>100.000 VNĐ</td>
+          <td colspan="2">50</td>
+        </tr>
+        <tr>
+          <td>Quần jean nữ</td>
+          <td>200.000 VNĐ</td>
+          <td colspan="2">20</td>
+        </tr>
+        <tr>
+          <td>Giày thể thao</td>
+          <td>300.000 VNĐ</td>
+          <td colspan="2">30</td>
+        </tr>
+      </tbody>
+      <!-- Cú pháp nhanh: tfoot>tr>td*2 -->
+      <tfoot>
+        <tr>
+          <td>Remark</td>
+          <td colspan="2">Chỉ thống kê sản phẩm trong kho</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ví dụ 3 -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Ví dụ 2 -->
+    <style>
+      h2 {
+        color: chocolate;
+        font-style: italic;
+      }
+    </style>
+    <title>Bài 22 (index)</title>
+  </head>
+  <body>
+    <!-- CSS (Cascading Style Sheet): là một ngôn ngữ được sử dụng để tìm và định dạng lại các phần tử 
+    được tạo ra bởi ngôn ngữ đánh dấu (HTML) -->
+    <!-- Nếu HTML đóng vai trò định dạng các phần tử trên website như việc tạo ra các đoạn văn bản, các
+    tiêu đề, v.v. thì CSS sẽ giúp chúng ta có thể thêm style vào các phần tử HTML đó như đổi bố cục, màu
+    sắc trang, đổi màu chữ, font chữ, v.v. -->
+    <!-- Có 3 nơi có thể đặt code CSS:
+    1. Inline (CSS nội tuyến): <tag style="css" />
+    2. Internal (CSS nội bộ): <style> css </style>
+    3. External (CSS ngoại tuyến): <link href="style.css"/> -->
+
+    <!-- 1. Inline -->
+    <!-- Là cách viết mã CSS ngay bên trong phần tử cơ bản HTML -->
+    <!-- Ví dụ 1-->
+
+    <a href="./">Home</a>
+    <a href="./contact.html">Contact</a>
+    <a href="./about.html">About</a>
+
+    <h1>Gà lại lập trình - Học CSS cơ bản - Bài 22</h1>
+    <h2 style="color: blueviolet">Những câu nói bất của của TUHOC.CC</h2>
+    <p style="color: rgb(70, 198, 155)">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
+      cupiditate. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </p>
+
+    <!-- 2. Internal -->
+    <!-- Là cách viết mã CSS trong cặp thẻ style (đặt trong khối head) -->
+
+    <!-- 3. External -->
+    <!-- Trong trường hợp muốn áp dụng cho toàn bộ các file nằm trên trang web, tránh việc phải copy css 
+    ra tất cả các file này -->
+    <!-- Là cách viết mã CSS thành 1 tệp .css quản lý riêng -->
+    <!-- Cần khai báo trong tệp HTML để link đến tệp CSS -->
+    <!-- rel="stylesheet" thông báo cho trình duyệt tải tệp CSS được chỉ định và áp dụng các định kiểu trong
+    tệp đó cho trang web hiện tại -->
+
+    <!-- Vị trí đặt CSS (Mức độ ưu tiên từ cao -> thấp) -->
+    <!-- Inline => Internal => External -->
+    <!-- Lưu ý: Trong code ở phần thẻ head của Internal và External, phần khai báo của cách nào ở sau thì sẽ
+    ghi đè lên cách trước đó (có mức độ ưu tiên cao hơn) -->
+  </body>
+</html>
